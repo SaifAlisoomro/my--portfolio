@@ -1,8 +1,10 @@
 
+"use client"
 import Link from "next/link";
 import React from "react";
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import Image from "next/image";
+import logo from "../../../public/assests/profle/logo.jpeg"
 
 const Navbar = () => {
   return (
@@ -11,7 +13,7 @@ const Navbar = () => {
         <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
           <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
            
-          <Image src={require("../../../public/assests/profle/logo.jpeg")} alt="mylogo" width={100} height={100} className="w-10"/>
+          <Image src={logo} alt="mylogo" width={100} height={100} className="w-10"/>
           <span className="ml-3 text-xl">SAIFI SOOMRO</span>
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">

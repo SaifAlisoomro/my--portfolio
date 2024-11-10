@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import logo from "../../../public/assests/profle/profle.png"
 
 const About = () => {
   return (
@@ -8,11 +9,11 @@ const About = () => {
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
-              className="object-cover object-center rounded mx-auto w-[400px] h-[400px]"
-              alt="hero"
-              src={require("../../../public/assests/profle/profle.png")}
-              width={300}
-              height={300}
+              className="object-cover object-center rounded mx-auto"
+              alt="Profile"
+              src={logo} // Correct relative path
+              width={400}
+              height={400}
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -32,9 +33,8 @@ const About = () => {
               a passion for blending art and technology in meaningful ways.
             </p>
             <div className="flex justify-center">
-             
-              <button className="ml-4 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                    Front-End Developer
+              <button className="ml-4 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg">
+                Front-End Developer
               </button>
             </div>
           </div>

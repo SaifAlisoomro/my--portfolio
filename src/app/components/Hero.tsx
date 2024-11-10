@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Typewriter from 'typewriter-effect';
 import Link from "next/link";
-
+import profile from "../../../public/assests/profle/profle.png"
 
 const Hero = () => {
   return (
@@ -26,12 +26,12 @@ const Hero = () => {
 />          
             </h1>
             <p className="mb-8 leading-relaxed">
-              "Creative and detail-oriented front-end developer with a passion
+             ` Creative and detail-oriented front-end developer with a passion
               for building intuitive, responsive, and accessible web interfaces.
               Skilled in HTML, CSS, JavaScript, and modern frameworks like
               Next.js, with a focus on delivering user-friendly experiences and
               visually appealing designs. Dedicated to continuous learning and
-              applying best practices to craft efficient, maintainable code."
+              applying best practices to craft efficient, maintainable code`
             </p>
             <div className="flex justify-center">
              <Link href={"/contact"}>
@@ -47,7 +47,7 @@ const Hero = () => {
               width={500}
               height={500}
               alt="hero"
-              src={require("../../../public/assests/profle/profle.png")}
+              src={profile}
             />
           </div>
         </div>

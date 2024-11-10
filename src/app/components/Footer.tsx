@@ -1,6 +1,8 @@
+
 import React from "react";
 import { FaFacebook , FaInstagram,FaLinkedin,FaYoutube,FaTiktok } from "react-icons/fa";
 import Image from "next/image";
+import logos from "../../../public/assests/profle/logo.jpeg"
 
 
 const Footer = () => {
@@ -10,7 +12,7 @@ const Footer = () => {
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             
-            <Image src={require("../../../public/assests/profle/logo.jpeg")} alt="logo" width={100} height={100} className="w-12 rounded-full"/>
+            <Image src={logos} alt="logo" width={100} height={100} className="w-12 rounded-full"/>
             <span className="ml-3 text-xl">Saif Soomro</span>
           </a>
           <p className=" text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
